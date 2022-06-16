@@ -4,15 +4,17 @@ import styled from 'styled-components';
 import Carrinho from './components/Carrinho';
 import Filtro from './components/Filtro';
 import Home from './components/Home';
+import listaDeProdutos from './components/produtos/Produtos';
 
 export default class App extends React.Component {
   state = {
-    produtos : ['aaaa', 'bbbbb', 'ccccc']
+    produtos : listaDeProdutos
   }
   
   render(){
-
+    console.log(this.state.produtos)
   return (
+
     <div>
      
 
