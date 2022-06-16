@@ -6,7 +6,11 @@ export default class Carrinho extends React.Component {
         produtos: this.props.produtos
     }
     render(){
-    
-        return(<h1>oi</h1>)
+         
+        return(
+        <div>
+              
+        </div>
+        )
     }
 }
