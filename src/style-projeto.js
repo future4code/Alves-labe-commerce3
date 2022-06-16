@@ -24,7 +24,6 @@ export const FooterStyle = styled.footer`
     display: flex;
     justify-content:center;
     background-color: #ABABCB;
-    padding: 20px 20px
     img {width: 2vw}
 `
 
