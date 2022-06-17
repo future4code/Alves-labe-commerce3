@@ -27,11 +27,13 @@ export default class Carrinho extends React.Component {
         } 
     }
     precoFinal(){
-        let soma = 0.1
+        let soma = 0.0001
         let preco = this.state.produtos.map ((item)=> {return item.valor})
         for (let index = 0; index < preco.length; index++) {
-            soma =+ preco[index]
+            soma += preco[index]
+
         }
+        
         if (this.state.precofinal !== soma) {
         this.setState({precofinal: soma})}
     }
@@ -46,14 +48,12 @@ export default class Carrinho extends React.Component {
             )
         })
 
-  
-
         return (
             <BoxCarrinho>
                 <ul>
                 {carrinho}
                 </ul>
-                <h5>Total: R${this.state.precofinal}</h5>
+                <h5>Total: R${this.state.precofinal.toFixed(2)}</h5>
             </BoxCarrinho>
         );
     }

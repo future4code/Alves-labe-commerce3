@@ -1,12 +1,12 @@
-import UniversoProfundo from '../img/universo-profundo.png';
-import OdisseiaEspacial from '../img/os-registros-de-uma-notavel-odisseia-espacial.png';
-import AlgumLugar from '../img/em-algum-lugar-nas-estrelas.png';
-import EncontroRama from '../img/encontro-com-rama.png';
-import OFim from '../img/o-fim-de-todas-as-coisas.png';
-import Misterio from '../img/misterio-por-tras-das-nossas-origens.png';
-import GuiaDefinitivo from '../img/mochileiro-das-galaxias.png';
-import Atomo from '../img/atomo-ao-buraco.png';
-import HistoriaUniverso from '../img/historia-do-universo.png';
+import UniversoProfundo from './img/universo-profundo.png';
+import OdisseiaEspacial from './img/os-registos-estelares-de-uma-notavel-odisseia-espacial.png';
+import AlgumLugar from './img/em-algum-lugar-nas-estrelas.png';
+import EncontroRama from './img/encontro-com-rama.png';
+import OFim from './img/o-fim-de-todas-as-coisas.png';
+import Misterio from './img/misterio-por-tras-das-nossas-origens.png';
+import GuiaDefinitivo from './img/mochileiro-das-galaxias.png';
+import Atomo from './img/atomo-ao-buraco.png';
+import HistoriaUniverso from './img/historia-do-universo.png';
 
 
 

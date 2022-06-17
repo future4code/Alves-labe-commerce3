@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import styled from 'styled-components';
 import Home from './components/Home';
-import listaDeProdutos from './components/produtos/Produtos';
+import listaDeProdutos from './components/Produtos/Produtos';
 import { FooterStyle, HeaderStyle } from './style-projeto';
 import logoIcon from './img/logo-icon.png';
 import Facebook from './img/img-fb.png';
