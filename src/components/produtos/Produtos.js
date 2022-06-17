@@ -19,7 +19,7 @@ const listaDeProdutos = [
 },
 {
     id: 2,
-    nome: 'Os Registros Estelares de uma Notável Odisseia Espacial',
+    nome: 'Os Registros Estelares',
     valor: 50.47,
     img: OdisseiaEspacial,
 },
@@ -43,13 +43,13 @@ const listaDeProdutos = [
 },
 {
     id: 6,
-    nome: 'O Mistério por Trás das Nossas Origens',
+    nome: 'O Mistério',
     valor: 49.12,
     img: Misterio,
 },
 {
     id: 7,
-    nome: 'O Guia Definitivo do Mochileiro das Galáxias',
+    nome: 'O Guia Definitivo',
     valor: 59.30,
     img: GuiaDefinitivo,
 },
@@ -61,7 +61,7 @@ const listaDeProdutos = [
 },
 {
     id: 9,
-    nome: 'A História do Universo Para Quem Tem Pressa',
+    nome: 'A História do Universo',
     valor: 38.34,
     img: HistoriaUniverso,
 },

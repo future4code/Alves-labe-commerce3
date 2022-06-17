@@ -1,17 +1,9 @@
-
 import React from "react";
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import Home from './Home';
+import { InputsContainer, Display } from '../style-projeto';
 
-const InputsContainer = styled.div`
-  display: flex;
-  grid-auto-flow: column;
-  gap: 10px;
-`;
-const Display = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`
+
 export default class Filtro extends React.Component {
   state = {
     produtos: this.props.produtos,
@@ -51,13 +43,13 @@ export default class Filtro extends React.Component {
             onChange={this.onChangePrecoMax}
             placeholder="Preço Max."
             type="Number" />
+            </InputsContainer>
           <label>Filtrar</label>
           <select value={this.state.filtro} onChange={this.onChangeInput}>
             <option value="crescente">Crescente</option>
             <option value="decrescente">Decrescente</option>
           </select>
-        </InputsContainer>
-        <Display>
+          <Display>
           <Home produtosHome={this.state.produtos
             .filter(produto => {
               return produto.nome.toLowerCase().includes(this.state.busca.toLowerCase())

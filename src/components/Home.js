@@ -1,26 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { ProdutoStyle } from "../style-projeto";
+import { ProdutoStyle, DisplayHome, BoxCarrinho, CarrinhoStyle } from "../style-projeto";
 
-const BoxCarrinho = styled.div`
-border : solid black;
-width: 30%;
-`
 
-const CarrinhoStyle = styled.div`
-display: flex;
-width: 100%;
-  align-self: end;
-  justify-self: end;
-`;
-
-const Display = styled.div`
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-
-`
 
 export default class Home extends React.Component {
     state = {
@@ -90,7 +72,7 @@ export default class Home extends React.Component {
         })
         return (
             <CarrinhoStyle>
-                <Display>
+                <DisplayHome>
                     {this.state.produtos.map((item) => {
                         return (
                             <ProdutoStyle>
@@ -107,7 +89,7 @@ export default class Home extends React.Component {
                         )
                     })
                     }
-                </Display>
+                </DisplayHome>
 
                 <BoxCarrinho>
                     <ul>
