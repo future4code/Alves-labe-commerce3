@@ -31,7 +31,7 @@ export default class Home extends React.Component {
     componentDidUpdate() {
         console.log(this.state.produtosCarrinho)
         this.atualizaHome()
-
+        this.precoFinal()
     }
     atualizaHome() {
         if (this.state.produtos !== this.props.produtosHome) {
@@ -56,7 +56,7 @@ export default class Home extends React.Component {
     }
     precoFinal() {
         let soma = 0.0001
-        let preco = this.state.produtos.map((item) => { return item.valor })
+        let preco = this.state.produtosCarrinho.map((item) => { return item.valor })
         for (let index = 0; index < preco.length; index++) {
             soma += preco[index]
 
