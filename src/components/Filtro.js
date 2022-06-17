@@ -5,8 +5,9 @@ import Home from './Home';
 
 const InputsContainer = styled.div`
   display: flex;
-  grid-auto-flow: column;
+  flex-direction: column;
   gap: 10px;
+  
 `;
 const Display = styled.div`
   display: flex;

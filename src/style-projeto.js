@@ -23,7 +23,7 @@ export const FiltroStyle = styled.div`
   margin: 10px;
   background: #ABABCB;
   height: 100%;
-  align-items: flex-end;
+  align-items: flex-start;
   
 `
 
