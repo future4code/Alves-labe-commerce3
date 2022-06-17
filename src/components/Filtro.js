@@ -5,12 +5,15 @@ import Home from './Home';
 
 const InputsContainer = styled.div`
   display: flex;
-  grid-auto-flow: column;
   gap: 10px;
 `;
 const Display = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  
+`
+const Container = styled.div`
+display: flex;
+
 `
 export default class Filtro extends React.Component {
   state = {
@@ -37,6 +40,7 @@ export default class Filtro extends React.Component {
 
 
     return (
+
       <>
         <InputsContainer>
           <input
