@@ -6,7 +6,7 @@ import styled from "styled-components";
 // AQUI FICA O HEADER :D
 export const HeaderStyle = styled.div`
   display: flex;
-  alight-itens: start;
+  align-items: start;
   justify-content: center;
   img {width: 15vw}
   text-transform: uppercase;
@@ -22,9 +22,19 @@ export const FiltroStyle = styled.div`
   flex-direction: column;
   margin: 10px;
   background: #ABABCB;
+  height: 100%;
+  align-items: flex-end;
+  
 `
 
-// 
+//  AQUI FICA OS PRODUTOS :)
+export const ProdutoStyle = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+`
 
 // AQUI FICA O FOOTER :3
 export const FooterStyle = styled.footer`
