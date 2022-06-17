@@ -4,7 +4,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import Home from './Home';
 
 const InputsContainer = styled.div`
-  display: grid;
+  display: flex;
   grid-auto-flow: column;
   gap: 10px;
 `;

@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 // import Carrinho from './Carrinho';
 import styled from "styled-components";
 
@@ -6,7 +7,14 @@ const BoxCarrinho = styled.div`
 border : solid black;
 
 `
+=======
+import Carrinho from './Carrinho';
+import styled from 'styled-components'
+>>>>>>> c576af944780899f6355bf6a8f886596975e9034
 
+const CarrinhoStyle = styled.div`
+display: flex;
+`
 
 export default class Home extends React.Component {
     state = {
@@ -75,6 +83,7 @@ export default class Home extends React.Component {
             )
         })
         return (
+<<<<<<< HEAD
             <>
 
 
@@ -102,6 +111,33 @@ export default class Home extends React.Component {
                     <h5>Total: R${this.state.precofinal.toFixed(2)}</h5>
                 </BoxCarrinho>
             </>
+=======
+            <CarrinhoStyle>            
+            <div>   
+                <ul>
+                    {this.state.produtos.map((item) => {
+                        return (
+                            <div>
+                                <li>
+                                    <h4>{item.nome}</h4>
+                                    <img src={item.img} />
+                                    <p>R${item.valor}</p>
+                                </li>
+                                <button
+                                    onClick={() => this.AdicionarCarrinho(item.id)}
+                                >Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        )
+                    })
+                }
+                </ul>
+                </div>
+                <div>
+                    <Carrinho produtos={carrinhoNovo}/>
+                </div>
+            </CarrinhoStyle>
+>>>>>>> c576af944780899f6355bf6a8f886596975e9034
         );
     }
 }
