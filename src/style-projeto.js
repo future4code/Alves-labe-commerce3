@@ -22,20 +22,9 @@ export const FiltroStyle = styled.div`
   flex-direction: column;
   margin: 10px;
   background: #ABABCB;
-  height: 100%;
-  align-items: flex-end;
-  
-
 `
 
-// AQUI FICA OS PRODUTOS :)
-export const ProdutoStyle = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-
-`
+// 
 
 // AQUI FICA O FOOTER :3
 export const FooterStyle = styled.footer`
