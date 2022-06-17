@@ -1,32 +1,22 @@
 import React from "react";
+<<<<<<< HEAD
+// import Carrinho from './Carrinho';
 import styled from "styled-components";
-import { ProdutoStyle } from "../style-projeto";
-
-
-
 
 const BoxCarrinho = styled.div`
 border : solid black;
+
 `
-
-
+=======
+import Carrinho from './Carrinho';
+import styled from 'styled-components'
+>>>>>>> c576af944780899f6355bf6a8f886596975e9034
 
 const CarrinhoStyle = styled.div`
-  display: flex;
-  width: 80%;
-  align-self: end;
-  justify-self: end;
-`;
-const Display = styled.div`
 display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-
 `
 
 export default class Home extends React.Component {
-
     state = {
         produtos: this.props.produtosHome,
         produtosCarrinho: [],
@@ -93,38 +83,61 @@ export default class Home extends React.Component {
             )
         })
         return (
+<<<<<<< HEAD
+            <>
 
-=======
-            <CarrinhoStyle>            
-            <Display>   
-                    {this.state.produtos.map((item) => {
-                        return (
-                            <ProdutoStyle>
-                                <div>
-                                    <h4>{item.nome}</h4>
-                                    <img src={item.img} />
-                                     <p>R${item.valor}</p>
-                                 </div>
-                                <button
-                                    onClick={() => this.AdicionarCarrinho(item.id)}
-                                >Adicionar ao Carrinho
-                                </button>
-                            </ProdutoStyle>
-                        )
-                    })
+
+                {this.state.produtos.map((item) => {
+                    return (
+                        <div>
+                            <li>
+                                <h4>{item.nome}</h4>
+                                <img src={item.img} />
+                                <p>R${item.valor}</p>
+                            </li>
+                            <button
+                                onClick={() => this.AdicionarCarrinho(item.id)}
+                            >Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    )
+                })
                 }
-               </Display>
-                    <BoxCarrinho>
+
+                <BoxCarrinho>
                     <ul>
                         {carrinho}
                     </ul>
                     <h5>Total: R${this.state.precofinal.toFixed(2)}</h5>
                 </BoxCarrinho>
             </>
-      
-               
-              </CarrinhoStyle>
+=======
+            <CarrinhoStyle>            
+            <div>   
+                <ul>
+                    {this.state.produtos.map((item) => {
+                        return (
+                            <div>
+                                <li>
+                                    <h4>{item.nome}</h4>
+                                    <img src={item.img} />
+                                    <p>R${item.valor}</p>
+                                </li>
+                                <button
+                                    onClick={() => this.AdicionarCarrinho(item.id)}
+                                >Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        )
+                    })
+                }
+                </ul>
+                </div>
+                <div>
+                    <Carrinho produtos={carrinhoNovo}/>
+                </div>
+            </CarrinhoStyle>
+>>>>>>> c576af944780899f6355bf6a8f886596975e9034
         );
     }
 }
-
