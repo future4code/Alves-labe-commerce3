@@ -93,8 +93,6 @@ export default class Home extends React.Component {
             )
         })
         return (
-
-=======
             <CarrinhoStyle>            
             <Display>   
                     {this.state.produtos.map((item) => {
@@ -120,9 +118,6 @@ export default class Home extends React.Component {
                     </ul>
                     <h5>Total: R${this.state.precofinal.toFixed(2)}</h5>
                 </BoxCarrinho>
-            </>
-      
-               
               </CarrinhoStyle>
         );
     }
