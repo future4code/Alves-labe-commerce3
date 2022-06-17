@@ -1,6 +1,10 @@
 import React from "react";
 import Carrinho from './Carrinho';
+import styled from 'styled-components'
 
+const CarrinhoStyle = styled.div`
+display: flex;
+`
 
 export default class Home extends React.Component {
     state = {
@@ -27,8 +31,8 @@ export default class Home extends React.Component {
     render() {
         const carrinhoNovo = this.state.produtosCarrinho
         return (
-            <>
-            
+            <CarrinhoStyle>            
+            <div>   
                 <ul>
                     {this.state.produtos.map((item) => {
                         return (
@@ -46,9 +50,12 @@ export default class Home extends React.Component {
                         )
                     })
                 }
-                <Carrinho produtos={carrinhoNovo}/>
                 </ul>
-            </>
+                </div>
+                <div>
+                    <Carrinho produtos={carrinhoNovo}/>
+                </div>
+            </CarrinhoStyle>
         );
     }
 }

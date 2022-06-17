@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const BoxCarrinho = styled.div`
+display: flex-end;
 border : solid black;
 
 `

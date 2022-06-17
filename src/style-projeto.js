@@ -17,7 +17,14 @@ export const HeaderStyle = styled.div`
 `
 
 // AQUI FICA O FILTRO ^u^
+export const FiltroStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background: #ABABCB;
+`
 
+// 
 
 // AQUI FICA O FOOTER :3
 export const FooterStyle = styled.footer`
@@ -25,7 +32,7 @@ export const FooterStyle = styled.footer`
     justify-content:center;
     background-color: #ABABCB;
     padding: 20px 20px
-    img {width: 2vw}
+    img {width: 0.2vw}
 `
 
 

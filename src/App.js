@@ -3,7 +3,7 @@ import { Component } from 'react';
 import styled from 'styled-components';
 import Filtro from './components/Filtro';
 import listaDeProdutos from './components/Produtos/Produtos';
-import { FooterStyle, HeaderStyle } from './style-projeto';
+import { FiltroStyle, FooterStyle, HeaderStyle } from './style-projeto';
 import logoIcon from './img/logo-icon.png';
 import Facebook from './img/img-fb.png';
 import YouTube from './img/img-yt.png';
@@ -26,9 +26,9 @@ export default class App extends React.Component {
         </HeaderStyle>
 
 
-      
-      <Filtro produtos={this.state.produtos}/>
-
+      <FiltroStyle>
+        <Filtro produtos={this.state.produtos}/>
+      </FiltroStyle>
 
 
         <FooterStyle>
