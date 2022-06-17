@@ -4,15 +4,16 @@ import { ProdutoStyle } from "../style-projeto";
 
 const BoxCarrinho = styled.div`
 border : solid black;
-
+width: 30%;
 `
 
 const CarrinhoStyle = styled.div`
 display: flex;
-width: 80%;
+width: 100%;
   align-self: end;
   justify-self: end;
 `;
+
 const Display = styled.div`
 display: flex;
 flex-wrap: wrap;
@@ -88,25 +89,25 @@ export default class Home extends React.Component {
             )
         })
         return (
-            <CarrinhoStyle>            
-            <Display>   
+            <CarrinhoStyle>
+                <Display>
                     {this.state.produtos.map((item) => {
                         return (
                             <ProdutoStyle>
                                 <div>
                                     <h4>{item.nome}</h4>
                                     <img src={item.img} />
-                                     <p>R${item.valor}</p>
-                                 </div>
+                                    <p>R${item.valor}</p>
+                                </div>
                                 <button
                                     onClick={() => this.AdicionarCarrinho(item.id)}
                                 >Adicionar ao Carrinho
                                 </button>
                             </ProdutoStyle>
                         )
-                })
-                }
-            </Display>    
+                    })
+                    }
+                </Display>
 
                 <BoxCarrinho>
                     <ul>
@@ -114,7 +115,7 @@ export default class Home extends React.Component {
                     </ul>
                     <h5>Total: R${this.state.precofinal.toFixed(2)}</h5>
                 </BoxCarrinho>
-              </CarrinhoStyle>
+            </CarrinhoStyle>
         );
     }
 }
