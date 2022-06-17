@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { ProdutoStyle } from "../style-projeto";
 
 const BoxCarrinho = styled.div`
 border : solid black;
@@ -8,6 +9,16 @@ border : solid black;
 
 const CarrinhoStyle = styled.div`
 display: flex;
+width: 80%;
+  align-self: end;
+  justify-self: end;
+`;
+const Display = styled.div`
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+
 `
 
 export default class Home extends React.Component {
