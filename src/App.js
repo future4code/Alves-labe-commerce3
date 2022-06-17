@@ -1,7 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 import styled from 'styled-components';
-import Home from './components/Home';
+import Filtro from './components/Filtro';
 import listaDeProdutos from './components/Produtos/Produtos';
 import { FooterStyle, HeaderStyle } from './style-projeto';
 import logoIcon from './img/logo-icon.png';
@@ -27,7 +27,7 @@ export default class App extends React.Component {
 
 
       
-      <Home produtos={this.state.produtos}/>
+      <Filtro produtos={this.state.produtos}/>
 
 
 

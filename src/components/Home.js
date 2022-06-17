@@ -1,6 +1,6 @@
 import React from "react";
 import Carrinho from './Carrinho';
-import Filtro from './Filtro';
+
 
 export default class Home extends React.Component {
     state = {
@@ -28,7 +28,7 @@ export default class Home extends React.Component {
         const carrinhoNovo = this.state.produtosCarrinho
         return (
             <>
-            <Filtro produtos={this.state.produtos}/> 
+            
                 <ul>
                     {this.state.produtos.map((item) => {
                         return (
