@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Home from './Home';
-import { InputsContainer, Display } from '../style-projeto';
+import { InputsContainer, Display, PaginaToda } from '../style-projeto';
 
 
 export default class Filtro extends React.Component {
@@ -29,7 +29,7 @@ export default class Filtro extends React.Component {
 
 
     return (
-      <>
+      <PaginaToda>
         <InputsContainer>
           <input
             value={this.state.busca}
@@ -43,12 +43,12 @@ export default class Filtro extends React.Component {
             onChange={this.onChangePrecoMax}
             placeholder="Preço Max."
             type="Number" />
-            </InputsContainer>
           <label>Filtrar</label>
           <select value={this.state.filtro} onChange={this.onChangeInput}>
             <option value="crescente">Crescente</option>
             <option value="decrescente">Decrescente</option>
           </select>
+        </InputsContainer>
           <Display>
           <Home produtosHome={this.state.produtos
             .filter(produto => {
@@ -76,7 +76,7 @@ export default class Filtro extends React.Component {
           } />
         </Display>
 
-      </>
+      </PaginaToda>
     );
   }
 }

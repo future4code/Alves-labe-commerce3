@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { ProdutoStyle, DisplayHome, BoxCarrinho, CarrinhoStyle } from "../style-projeto";
-
+import { ProdutoStyle, DisplayHome, BoxCarrinho, CarrinhoStyle, BoxDescricao } from "../style-projeto";
+import Carrinho from "../img/carrinho.png"
+import {CarrinhoIcone, ImagemProduto} from "../style-projeto"
 
 
 export default class Home extends React.Component {
@@ -58,6 +59,7 @@ export default class Home extends React.Component {
             })
         this.setState({ produtosCarrinho: carrinhoRemovido })
     }
+ 
     render() {
         const carrinho = this.state.produtosCarrinho.map((item) => {
             return (
@@ -70,6 +72,7 @@ export default class Home extends React.Component {
                 </>
             )
         })
+        
         return (
             <CarrinhoStyle>
                 <DisplayHome>
@@ -78,7 +81,7 @@ export default class Home extends React.Component {
                             <ProdutoStyle>
                                 <div>
                                     <h4>{item.nome}</h4>
-                                    <img src={item.img} />
+                                    <ImagemProduto src={item.img}/>
                                     <p>R${item.valor}</p>
                                 </div>
                                 <button
@@ -95,7 +98,7 @@ export default class Home extends React.Component {
                     <ul>
                         {carrinho}
                     </ul>
-                    <h5>Total: R${this.state.precofinal.toFixed(2)}</h5>
+                    <h3>Total: R${this.state.precofinal.toFixed(2)}</h3>
                 </BoxCarrinho>
             </CarrinhoStyle>
         );
