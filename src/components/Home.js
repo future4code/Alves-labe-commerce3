@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ProdutoStyle, DisplayHome, BoxCarrinho, CarrinhoStyle, BoxDescricao } from "../style-projeto";
+import { ProdutoStyle, DisplayHome, BoxCarrinho, CarrinhoStyle, BoxDescricao, SeuCarrinhoStyle } from "../style-projeto";
 import Carrinho from "../img/carrinho.png"
 import {CarrinhoIcone, ImagemProduto} from "../style-projeto"
 
@@ -79,14 +79,14 @@ export default class Home extends React.Component {
                     {this.state.produtos.map((item) => {
                         return (
                             <ProdutoStyle>
-                                <div>
+                                
                                     <h4>{item.nome}</h4>
                                     <ImagemProduto src={item.img}/>
-                                    <p>R${item.valor}</p>
-                                </div>
+                                    <p>R${item.valor.toFixed(2)}</p>
+                              
                                 <button
                                     onClick={() => this.AdicionarCarrinho(item.id)}
-                                >Adicionar ao Carrinho
+                                >Adicionar ao Carrinho <CarrinhoIcone src = {Carrinho} alt = "carrinho"/>
                                 </button>
                             </ProdutoStyle>
                         )
@@ -95,6 +95,7 @@ export default class Home extends React.Component {
                 </DisplayHome>
 
                 <BoxCarrinho>
+                   <h2> Seu Carrinho <SeuCarrinhoStyle src={Carrinho}/></h2>
                     <ul>
                         {carrinho}
                     </ul>
