@@ -66,7 +66,7 @@ export default class Home extends React.Component {
                 <>
                     <li>
                         <h4>{item.nome}</h4>
-                        <p>{item.valor}</p>
+                        <p>R${item.valor.toFixed(2)}</p>
                     </li>
                     <button onClick={() => this.removeItem(item.id)}>Remover</button>
                 </>
