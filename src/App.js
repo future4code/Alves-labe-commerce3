@@ -38,7 +38,7 @@ export default class App extends React.Component {
                   <li>Rua dos Alfeneiros nº 4</li>
                   <li>Londrina</li>
                   <li>Email: bookspace@space.un</li>
-                  <li>Caixa Postal: 4204206969</li>
+                  <li>Caixa Postal: 0800800</li>
               </ol>
           </div>
           <div>

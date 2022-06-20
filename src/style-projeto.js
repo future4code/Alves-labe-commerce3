@@ -66,7 +66,7 @@ export const InputsContainer = styled.div`
   display: flex;
   padding: 2rem 1rem;
   flex-direction: column;
-  width: 15%;
+  width: 12.5%;
   gap: 10px;
   border: solid 1px #ABABCB;
   select {
@@ -97,7 +97,7 @@ export const InputsContainer = styled.div`
 
 export const Display = styled.div`
   display: flex;
-  width: 100%;
+  width: 85%;
  
 `
 
